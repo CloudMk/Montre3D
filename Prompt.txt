@@ -1,0 +1,57 @@
+salut,je veux que tu realise cette projet pour me defoulle un peu, {
+  "project_name": "Rolex 3D Experience",
+  "version": "1.0.0",
+  "description": "Un configurateur de montres de luxe en 3D haute performance utilisant React et Three.js.",
+  "tech_stack": {
+    "frontend": "React 19, Vite, TypeScript",
+    "styling": "Tailwind CSS 4, Lucide React",
+    "3d_engine": "Three.js, @react-three/fiber, @react-three/drei",
+    "ui_components": "Radix UI / Shadcn UI"
+  },
+  "design_philosophy": {
+    "theme": "Luxe Contemporain",
+    "colors": {
+      "primary": "#0F1419 (Bleu marine profond)",
+      "accent": "#C9A961 (Or jaune 18ct)",
+      "secondary": "#8B8680 (Gris taupe)",
+      "background": "Slate-50 to Slate-200 (Dégradé subtil)"
+    },
+    "typography": {
+      "headings": "Playfair Display (Élégance intemporelle)",
+      "body": "Lato / Sans-serif (Lisibilité moderne)"
+    }
+  },
+  "three_js_config": {
+    "camera": {
+      "position": [0, 0, 5],
+      "fov": 45
+    },
+    "lighting": {
+      "ambient": 0.5,
+      "spotlight": {
+        "position": [10, 10, 10],
+        "intensity": 1.0
+      },
+      "environment": "Preset: City"
+    },
+    "controls": {
+      "type": "PresentationControls / OrbitControls",
+      "rotation": "Auto-rotation 0.1 y-axis",
+      "zoom": "Enabled",
+      "pan": "Disabled"
+    }
+  },
+  "features": [
+    "Visualisation 3D interactive à 360°",
+    "Personnalisation en temps réel des matériaux et cadrans",
+    "Interface responsive (Mobile & Desktop)",
+    "Rendu photo-réaliste avec ombres de contact",
+    "Animations fluides au survol"
+  ],
+  "reproduction_prompt": "Crée un configurateur de montres Rolex en 3D utilisant React, Vite et Three.js. L'interface doit refléter un design de 'Luxe Contemporain' avec une palette de bleu marine, d'or et de gris. Intègre un modèle 3D au format GLB avec @react-three/fiber. Ajoute des contrôles de caméra fluides (OrbitControls), un éclairage environnemental réaliste et des options de personnalisation pour les matériaux (Acier, Or, Platine) et les couleurs de cadran. Utilise Tailwind CSS pour une mise en page élégante avec des cartes flottantes et une typographie serif pour les titres.",
+  "setup_commands": [
+    "pnpm create vite . --template react-ts",
+    "pnpm add three @types/three @react-three/fiber @react-three/drei lucide-react tailwindcss",
+    "mkdir -p public/models"
+  ]
+}
